@@ -30,3 +30,20 @@ const encrypt = function(plaintext, key) {
 
 // console.log(encrypt("animal", -2));
 module.exports = {encrypt};
+
+// ALTERNATIVE CODE OPTION
+// const encrypt = function(plaintext, key) {
+//   let nowArray = plaintext.split('');
+//   let output = [];
+//   nowArray.forEach(function(elem) {
+//     let letToNum = elem.charCodeAt() + key;
+//     if (letToNum < 97) {
+//       output.push(String.fromCharCode(123 - (97 - letToNum)));
+//     } else if (letToNum > 122) {
+//       output.push(String.fromCharCode(97 + (letToNum - 123)));
+//     } else {
+//       output.push(String.fromCharCode(letToNum));
+//     }
+//   });
+//   return output.join('').replace('?', ' ');
+// };
