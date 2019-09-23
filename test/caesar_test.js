@@ -1,7 +1,7 @@
 // cipher_test.js
 
 const assert = require('chai').assert;
-const { encrypt } = require('./caesar');
+const {encrypt} = require('../caesar');
 
 describe("caesar.encrypt", () => {
   // tip: try to make this single test pass first, before implementing the whole thing
